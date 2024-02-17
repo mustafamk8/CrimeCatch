@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+element.style {
+  margin-top: 1px;
+}
+
+body {
+    width: 100%;
+    background: #E5E7EB;
+    position: relative;
+    display: flex;
+}
+
+#menu {
+    background: #1c0b21;
+    background-size: contain;
+    width: 374px;
+    height: 1100px;
+}
+.logo p{
+  margin-top: 13px;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#menu .logo img {
+    width: 44px;
+    margin-top: 0px;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li {
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.2s ease;
+}
+
+#menu .items li:hover {
+    background: #725d7866;
+    cursor: pointer;
+}
+
+#menu .items li i {
+    color: #f3f3f3d4;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i {
+    color: #ffffffb7;
+}
+
+#menu .items a:hover {
+    color: #868585;
+}
+
+#menu .items li a {
+    text-decoration: none;
+    color: #f3f3f3d4;
+    font-weight: 300px;
+    transition: 0.2s ease;
+}
+
+#interface {
+    width: calc(100%);
+}
+
+#interface .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 40px;
+    border-bottom: 3px solid #7a0198d4;
+}
+
+#interface .navigation .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    padding: 5px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 5px;
+}
+
+#interface .navigation .search p {
+    font-size: 26.5px;
+}
+
+#interface .container {
+    position: relative;
+    /* width: 100%; */
+    margin: auto;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+#interface .container .title {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#interface .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(to bottom, #470059d4 0%, #25002ef3 100%);
+    border-radius: 25px;
+}
+
+#interface .container .table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#interface .container .table thead {
+    background-color: #1c0b2142;
+}
+
+.table thead tr th {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    opacity: 1;
+    padding: 15px;
+    vertical-align: top;
+    border: 1px solid #1c0b21;
+}
+
+.table tbody tr td {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+}
+
+
+/* #interface .container,
+    .form__input,
+    .form__button {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #interface .form__message {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    #interface .form__input-group {
+      margin-bottom: 2rem;
+      margin-left: 10px;
+      position: relative;
+      margin-top: 2rem;
+      width: 100%;
+      height: 50px;
+    }
+
+    #interface .form__input {
+      position: absolute;
+      width: 90%;
+      height: 100%;
+      padding: 11px 35px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      border-bottom: 2px solid #ccc;
+    }
+    
+
+    #interface .form__input-group i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+      font-size: 23px;
+    }
+
+    #interface .form__input-group h3{
+      color: #999;
+      font-size: 23px;
+      top: 50%;
+    }
+
+    #interface .form__input-group label{
+      color: #999;
+    }
+
+    #interface .form__input:focus {
+      border-color: #4e0061d4;
+      background: #ffffff;
+    }
+
+    #interface .form__input-group :focus~i {
+      color: #4e0061d4;
+    }
+
+    #interface .form__input--error {
+      color: var(--color-error);
+      border-color: var(--color-error);
+    }
+
+    #interface .form__input-error-message {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--color-error);
+    }
+
+    #interface .form__button {
+      width: 99%;
+      padding: 1rem 2rem;
+      font-weight: 300px;
+      font-size: 1.1rem;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+      background: linear-gradient(to bottom, #780396e7 0%, #3a0048e8 100%);
+    }
+    #interface .form__button a{
+      color: #ffffff;
+    }
+
+    #interface .form__button:hover {
+      background: linear-gradient(to top, #780396e7 0%, #3a0048e8 100%);
+    }
+
+    #interface .form__button:active {
+      transform: scale(0.98);
+    } */

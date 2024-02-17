@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    
+    
+    <link rel="stylesheet" href="extraFiles/complaintFormStyle.css">
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
+ -->
+ 
+ 
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="extraFiles/complaintFormStyle.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
+ 
+ 
+ 
+    <title>Report Crime</title>
+    <style>
+      
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+      * {
+        font-family: poppins;
+      }
+      
+      .logo p {
+        margin-top: 0px;
+      }
+
+      .logo {
+        display: flex;
+        color: #fff;
+        padding: 0px 0 0 10px;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 3px;
+      }
+
+      .logo img {
+        width: 44px;
+        margin-top: 8px;
+      }
+
+
+body{
+    background-color: #dddfe4;
+    color: #25002ef3;
+}
+
+.container p{
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.ttime{
+    margin-right: 10px;
+}
+
+.card{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.103);
+    margin-bottom: 40px;
+    width: 70%;
+    position: relative;
+}
+
+.card-header{
+    background-color: #1c0b2142;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.card-body{
+    color: black;
+}
+
+#my_camera{
+    width: 30%;
+    height: 40%;
+}
+.form__button {
+    width: 60%;
+    margin-left: 7.5rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 1rem 2rem;
+    font-weight: 300px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #470059d4 0%, #25002ef3 100%);
+  }
+
+ .form__button:hover {
+    background: linear-gradient(to top, #470059d4 0%, #25002ef3 100%);
+  }
+
+ .form__button:active {
+    transform: scale(0.98);
+  }
+
+  .snap{
+    color: #ffffff;
+    font-weight: 30px;
+    /* font-size: 0.5rem; */
+    background-color: #470059d4;
+    border: none;
+    border-radius: 2px;
+    padding: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .footer-dark {
+    padding:50px 0;
+    color:#ffffff;
+    background-color:#2f2f2f;
+    }
+    
+    .footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+    }
+    
+    .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+    }
+    
+    .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+    }
+    
+    .footer-dark ul a:hover {
+    opacity:0.8;
+    }
+  
+    .icons a:hover{
+    color: #ffffff;
+    cursor: pointer;
+    }
+    
+    @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+      text-align:center;
+      padding-bottom:20px;
+    }
+    }
+    
+    .footer-dark .item.text {
+    margin-bottom:36px;
+    }
+    
+    @media (max-width:767px) {
+    .footer-dark .item.text {
+      margin-bottom:0;
+    }
+    }
+    
+    .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+    }
+    
+    /*<!-- .footer-dark .item.social {
+    text-align:center;
+    }
+    
+    @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align:center;
+      margin-top:20px;
+    }
+    }
+    
+    .footer-dark .item.social  a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(222, 222, 222, 0.4);
+    margin:0 8px;
+    color:#fff;
+    
+    } */   
+ /*   <!-- .footer-dark .item.social > a:hover {
+    opacity:0.9;
+    } -->  */
+    
+    .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+    }
+
+    </style>
+    
+</head>
+<body onload="getLocation()">
+
+<nav class="navbar" style="background-color: #280032f3; height: 90px;">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="logo3.png" alt="" height="44px">
+          <a href="crime.jsp" style="color: white; text-decoration: none;"><p>RIMECATCH</p></a>
+        </div>
+        <!-- <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-warning" type="submit">Search</button>
+        </form> -->
+      </div>
+</nav>
+
+  <div class="container">
+  <p>Report a Crime Anonymously</p>
+  
+  <form method="post" action="ComplaintFormCtrl" enctype="multipart/form-data">
+    <div class="form-group">
+      <div class="card mx-auto">
+        <label class="card-header" for="sel1">Select the crime that happened:</label>
+        <div class="card-body">
+          <select class="form-control card-text" name="crimeType" id="sel1" onchange="other(this);">
+            <option value="select">---Select---</option>
+            <option value="kidnapping">Kidnapping</option>
+            <option value="childAbuse">Child Abuse</option>
+            <option value="drug">Drug trafficking</option>
+            <option value="rape">Rape and sexual offences</option>
+            <option value="murder">Murder</option>
+            <option value="other">Other crime</option>
+          </select>
+      <!--     <div id="ifYes" style="display: none;">
+            <label >Mention here</label> <input type="text" id="other" name="other" /><br />
+          </div>     --> 
+        </div>
+      </div>     
+    </div>
+
+    <div class="form-group">
+      <div class="card mx-auto">
+        <label class="card-header" for="sel1">When it happened ?</label>
+        <div class="card-body">        
+            <label class="radio-inline mx-3"><input type="radio" name ="time" value="" class="ttime">Morning</label>
+            <label class="radio-inline mx-3" ><input type="radio" name ="time" value="" class="ttime">Afternoon</label>
+            <label class="radio-inline mx-3"><input type="radio" name ="time" value="" class="ttime">Night</label>
+        </div>
+      </div>     
+    </div>
+
+    <div class="form-group">
+      <div class="card mx-auto">
+        <label class="card-header" for="people">Number of people involved (approx)</label>
+        <div class="card-body">        
+          <input class="form-control" type="number" name="noOfPeople"></input>
+        </div>
+      </div>     
+    </div>
+
+    <div class="form-group">
+      <div class="card mx-auto">
+        <label class="card-header" for="crimePlace">Where did the crime or incident take place? (Mention the area name)</label>
+        <div class="card-body">        
+          <textarea class="form-control" name="location" rows="2" id="comment"></textarea>
+        </div>
+      </div>     
+    </div>
+
+    <div class="form-group">
+      <div class="card mx-auto">
+        <label class="card-header" for="info">Tell us more about the crime: what you heard, saw or know about.</label>
+        <div class="card-body">        
+          <textarea class="form-control" name="description" rows="5" id="comment"></textarea>
+        </div>
+      </div>     
+    </div>
+
+
+
+    <div class="form-group">
+      <div class="card mx-auto">
+        <label class="card-header" for="pic">Capture the photo of crime</label>
+
+        <div class="card-body imgCapture">        
+          
+            <div >
+              <div class="col-md-6">
+                <div id="my_camera"></div>
+                <br />
+                <input type="button" class="my-1 snap" value="Take Snapshot" onClick="take_snapshot(10,10000000)" /><br>
+                
+              </div>
+              <div class="col-md-6">
+                <div id="results" class="my-3">Your captured image will appear here...</div>
+                <input type="file" class="py-2" name="image" />
+                <input type="file" class="py-2" name="image2" />
+                <input type="file" class="py-2" name="image3" />
+              </div>
+            </div>
+            <div>
+            <input type="hidden" name="pincode" id="locationInput" >
+      		</div>
+          
+        </div>
+        <button type="submit" class="form__button mx-auto">Submit</button>
+      </div>     
+
+    </div>
+
+    
+  </form>
+  
+</div>
+
+<div class="footer-dark" style="margin-top: 60px;">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>100% Anonymous Crime Reporting</li>
+                            <li>Safety And Security Tips For Your And Your Loved Ones Security</li>
+                        </ul>
+                    </div> -->
+                    <div class="col-sm-8 item">
+                        <h2>About</h2>
+                        <ul>
+                            <li>100% Anonymous Crime Reporting</li>
+                            <li>Safety And Security Tips For Your And Your Loved Ones Security</li>
+							<li>We never ask for your personal details, just what you know about crime.</li>
+						</ul>
+                    </div>
+                    <div class="col-sm-4 item text">
+                        <h2>Connect with us</h2>
+                        <ul class="icons" style="font-size: 35px; padding: 0px;">
+							<a href="#"><i class="fa-brands fa-instagram" style= "padding: 5px;"></i></a>
+							<a href="#"><i class="fa-brands fa-square-facebook" style= "padding: 5px;"></i></a>
+							<a href="#"><i class="fa-brands fa-twitter" style= "padding: 5px;"></i></a>
+							<a href="tel:+917489012235"><i class="fa-solid fa-phone" style= "padding: 5px;"></i></a>
+						</ul>
+                    </div>
+					
+                <br><br><p class="copyright" style="font-size: medium; padding-top:30px;">Designed and developed by <span><b>G-5</b></span></p>
+            </div>
+        </footer>
+    </div>
+
+<script language="JavaScript">
+  Webcam.set({
+    width: 490,
+    height: 390,
+    image_format: "jpeg",
+    jpeg_quality: 100,
+  });
+
+  Webcam.attach("#my_camera");
+
+      // TAKE A SNAPSHOT.
+      take_snapshot = function (min,max) {
+          Webcam.snap(function (data_uri) {
+
+            let file_name= Math.floor(Math.random() * (max - min)) + min +".jpeg";	    	            
+
+            downloadImage(file_name,data_uri)
+
+            console.log("File = "+data_uri);
+
+          });    	        
+      }          
+
+      // DOWNLOAD THE IMAGE.
+      downloadImage = function (name, datauri) {
+
+        var a = document.createElement('a'); 
+          a.setAttribute('download', name);
+          a.setAttribute('href', datauri);
+          a.click();   
+}
+           
+</script>
+
+<script>
+
+
+const options = {
+  enableHighAccuracy: true,
+  timeout: 5000,
+  maximumAge: 0,
+};
+
+function success(pos) {
+  const crd = pos.coords;
+
+  console.log("Your current position is:");
+  console.log(`Latitude : ${crd.latitude}`);
+  console.log(`Longitude: ${crd.longitude}`);
+  console.log(`More or less ${crd.accuracy} meters.`);
+}
+
+function error(err) {
+  console.warn(`ERROR(${err.code}): ${err.message}`);
+}
+
+navigator.geolocation.getCurrentPosition(success, error, options);
+
+
+        function getLocation() {
+        	
+    navigator.geolocation.getCurrentPosition(position =>{
+      const { latitude, longitude } = position.coords;
+      const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+      fetch(url).then(res=> res.json()).then(data=>{
+        console.table(data.address);
+        
+        console.table(data.address.postcode);
+    //    document.querySelector('.myForm input[name ="latitude"]').value = data.address.postcode;
+        const location = document.getElementById("locationInput");
+        location.value = data.address.postcode;
+      }).catch(()=>{
+        console.log("error occured");
+      });
+    });
+}
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
